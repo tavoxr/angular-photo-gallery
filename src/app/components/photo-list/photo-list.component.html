@@ -1,1 +1,18 @@
-<p>photo-list works!</p>
+<div class="row mt-4">
+    <div class="col-sm-12 col-md-6 col-lg-4"
+         *ngFor="let photo of photos"
+        >
+        <div class="card card-photo mb-3" (click)="selectedCard(photo._id)">
+            <img   [src]="'http://localhost:3000/' + photo.imageUrl" 
+                    alt="image" 
+                    class=""
+                    />
+            <div class="card-body">
+                <h3 class="card-title">{{photo.title}}</h3>
+                <p>{{photo.description}}</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
