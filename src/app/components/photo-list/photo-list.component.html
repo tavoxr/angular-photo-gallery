@@ -3,9 +3,9 @@
          *ngFor="let photo of photos"
         >
         <div class="card card-photo mb-3" (click)="selectedCard(photo._id)">
-            <img   [src]="'http://localhost:3000/' + photo.imageUrl" 
+            <img   [src]="photo.imageUrl" 
                     alt="image" 
-                    class=""
+                    class="card-img-top"
                     />
             <div class="card-body">
                 <h3 class="card-title">{{photo.title}}</h3>
