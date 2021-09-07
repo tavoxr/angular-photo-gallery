@@ -40,7 +40,7 @@ export class PhotoPreviewComponent implements OnInit {
     this.photoService.deletePhoto(id)
       .subscribe(res => {
         console.log(res);
-        this.router.navigate(['/photos'])
+        this.router.navigate(['/'])
       },
         err => {
           console.log(err);
@@ -54,7 +54,7 @@ export class PhotoPreviewComponent implements OnInit {
     this.photoService.updatePhoto(this.id, title.value, description.value)
       .subscribe(res => {
         console.log(res);
-        this.router.navigate(['/photos']);
+        this.router.navigate(['/']);
       },
         err => {
           console.log(err);

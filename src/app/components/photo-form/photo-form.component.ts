@@ -36,7 +36,7 @@ export class PhotoFormComponent implements OnInit {
     this.photoService.createPhoto(title.value,description.value, this.file)
     .subscribe(res =>{
       console.log(res)
-      this.router.navigate(['/photos']);
+      this.router.navigate(['/']);
     
     }, err=> console.log(err))
     console.log(title.value);

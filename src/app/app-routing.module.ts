@@ -7,7 +7,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 const routes: Routes = [
   {
-    path: 'photos',
+    path: '',
     component: PhotoListComponent
   },
   {
@@ -18,11 +18,7 @@ const routes: Routes = [
     path: 'photos/:id',
     component: PhotoPreviewComponent
   },
-  {
-    path: '',
-    redirectTo: '/photos',
-    pathMatch: 'full'
-  }
+  
 
 
 ];
