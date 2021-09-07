@@ -7,7 +7,7 @@ import {Photo} from '../interfaces/Photo';
 })
 export class PhotoService {
 
-  URI = 'http://localhost:3000/api/photos'
+  URI = 'https://photo-gallery-node.herokuapp.com/api/photos'
   constructor(private http: HttpClient) { }
 
 
