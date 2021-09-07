@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/photos',
+    redirectTo: 'photos',
     pathMatch: 'full'
   }
 
